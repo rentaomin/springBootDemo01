@@ -1,0 +1,14 @@
+## 选择使用哪个dev 或者 product 配置文件，不需要写前缀
+spring:
+  profiles:
+    active: product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password : root
+  jpa:
+    hibernate:
+      # create 每次创建新的表，若表存在则先删除后创建
+      ddl-auto: update
+    show-sql: true

@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /girl
+  port: 8080
+
+# 注意此处：冒号后面必须要有空格，name 前面没有空格，与server为同级，否则获取name时会报错
+name: B
+age: 20
+
+# 配置yml中变量的值
+content: "name: ${name}, age: ${age}"
+
+person :
+  name: "李四"
+  age: 23
+
